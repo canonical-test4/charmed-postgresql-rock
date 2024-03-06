@@ -20,7 +20,7 @@ jobs:
     name: Release rock
     needs:
       - build
-    uses: canonical/data-platform-workflows/.github/workflows/release_rock.yaml@v12.5.0
+    uses: canonical-test4/data-platform-workflows/.github/workflows/release_rock.yaml@multi-arch
     with:
       artifact-prefix: ${{ needs.build.outputs.artifact-prefix }}
     permissions:
